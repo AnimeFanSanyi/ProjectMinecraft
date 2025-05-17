@@ -24,28 +24,175 @@
 
   <main>
     <hr>
+    <figure id="creeper-figure">
+        <img id="image-to-hide" src="creeper_oh_maaaan.jpg" alt="Creeper">
+        <figcaption>Creeper? <br>
+                    Aww, man
+        </figcaption>
+    </figure>
 
-    <img id="image-to-hide" src="creeper_oh_maaaan.jpg" alt="Creeper">
-
-    <div id="video-container"></div>
+    <div id="video-section">
+        <div id="video-container"></div>
+    </div>
 
     <script>
-        document.getElementById("my-button").addEventListener("click", function () {
+  document.getElementById("my-button").addEventListener("click", function () {
+    if (window.scrollY > 0) {
 
+      window.scrollTo(0, 0);
+
+
+      setTimeout(() => {
+
+        document.getElementById("creeper-figure").style.display = "none";
         document.getElementById("image-to-hide").style.display = "none";
 
-
         document.getElementById("video-container").innerHTML = `
-            <iframe width="560" height="315"
-            src="https://www.youtube.com/watch?v=jn4xFdPpMUg?autoplay=1&rel=0"
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/jn4xFdPpMUg?start=2&autoplay=1&mute=1"
+            title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
-            </iframe>
+          </iframe>
         `;
         document.getElementById("video-container").style.display = "block";
-        });
+      }, 500);
+
+      document.getElementById("creeper-figure").style.display = "none";
+      document.getElementById("image-to-hide").style.display = "none";
+
+      document.getElementById("video-container").innerHTML = `
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/jn4xFdPpMUg?start=2&autoplay=1&mute=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      `;
+      document.getElementById("video-container").style.display = "block";
+    }
+  });
+</script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+    const scrollY = window.scrollY;
+    const header = document.querySelector('header');
+    header.style.backgroundPosition = `center ${-scrollY}px`;
+    });
     </script>
+  
+
+
+    <hr>
+    <section class="bal_margo">
+        <h2><strong><u style="size: 15px;">Tartalomjegyzék:</u></strong></h2>
+        <ul>
+            <li><a href="#iranyitas">Irányítás</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </section>
+
+    <hr>
+
+   
+    <section class="bal_margo">
+        <h2 style="color: white; padding-top: 25px;" id="iranyitas">Irányítás:</h2>
+
+        <div style="float: right; width: auto; height: 200px; padding-right: 15px;">
+            <img src="minecraft_hints.png" alt="hints">
+        </div>
+
+        <table class="controls-table" style="padding: bottom 8px; ;">
+            <caption style="color: white; font-weight: bold; text-decoration: underline" class="table_title">Fontos:</caption>
+            <tr><td><span class="key">W</span>
+            </td><td>előre mozgás</td></tr>
+            <tr><td><span class="key">A</span>
+            </td><td>balra mozgás</td></tr>
+            <tr><td><span class="key">S</span>
+            </td><td>hátra mozgás</td></tr>
+            <tr><td><span class="key">D</span>
+            </td><td>jobbra mozgás</td></tr>
+            <tr><td><span class="key">Space</span>
+            </td><td>ugrás</td></tr>
+            <tr><td><span class="key">Left Shift</span>
+            </td><td>gugolás</td></tr>
+            <tr><td><span class="key">E</span></td>
+                <td>inventory megnyitása / bezárása</td></tr>
+            <tr><td><span class="key">Jobb click</span></td>
+                <td>blockok letétele, interakció, armor gyors felvétele/cseréje</td></tr>
+            <tr><td><span class="key">T</span></td>
+                <td>chat megnyitása <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi-pcCJn6uNAxUV-LsIHShaN38QwqsBegQIGRAG&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D0BVC4pexRnA&usg=AOvVaw0LfQr-4z70ENRmnqiqY6le&opi=89978449" target="_blank">(commandok)</a></td></tr>
+        </table>
+
+        <table class="controls-table">
+            <caption style="color: white; font-weight: bold; text-decoration: underline" class="table_title">Egyéb:</caption>
+        <tr><td><span class="key">F</span></td>
+            <td>tárgyak bal/jobb kéz közötti gyors cseréje</td></tr>
+        <tr><td><span class="key">F3</span></td>
+        <td>xyz koordináták és rengeteg más adat megtekintése</td></tr>
+        <tr><td><span class="key">F1</span></td>
+            <td>hotbar elrejtése</td></tr>
+        <tr><td><span class="key">F2</span></td>
+            <td>képernyőkép készitése</td></tr>
+        <tr><td><span class="key">F3+F4</span></td>
+            <td>gamemode gyors váltása (csak ha csalások engedélyezve)</td></tr>
+        <tr><td><span class="key">F5</span></td>
+            <td>perspektíva váltása (külső, belső, elülső)</td></tr>
+        <tr><td><span class="key">L</span></td>
+            <td>achievement menü megjelenítése</td></tr>
+        <tr><td><span class="key">Ctrl+W</span></td>
+            <td>futás (csak ameddig a hungerbar nincs 4 alatt)</td></tr>
+        </table>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -65,10 +212,12 @@
     <hr>
   </main>
 
-  <footer>
-    <p>Logó készítéséhez haznált oldalak:</p>
-    <a href="https://www.design.com" target="_blank">Design</a>
-    <a href="https://www.remove.bg" target="_blank">RemoveBG</a>
+  <footer style="margin-left: 32px; gap: 15px;">
+    <p><strong>Logó készítéséhez használt oldalak:</strong></p>
+    <a href="https://www.design.com" target="_blank"><em>Design</em></a>
+    <a href="https://www.remove.bg" target="_blank"><em>RemoveBG</em></a>
   </footer>
 </body>
 </html>
+
+
