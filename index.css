@@ -3,8 +3,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 50%;
-  transform: translate(-50%, -50%);
-  height: 60px; /* adjust as needed */
+  height: 60px; 
 }
 body {
   margin: 0;
@@ -18,8 +17,8 @@ body {
 }
 header {
   position: relative;
-  height: 100px; /* adjust as needed */
-  background-color: #f0f0f0; /* just for visibility */
+  height: 100px; 
+  background-color: #00ff11; 
   padding: 0 20px;
 }
 nav {
