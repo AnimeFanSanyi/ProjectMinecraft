@@ -72,7 +72,7 @@ a{
 
 figure figcaption{
   text-align: center;
-  size: 5px;
+  font-size: 20px;
 }
 
 
@@ -158,22 +158,26 @@ figure figcaption{
 
 
 #video-container {
-      width: 560px;
-      height: 315px;
-      margin: 10px auto 0 auto;
-      display: none;
-      
-    }
-    #my-button {
-  width: 120px;
-  flex-shrink: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  aspect-ratio: 16 / 9;
+  margin: 10px auto 0 auto;
+  display: none;
 }
+  #my-button {
+    width: 120px;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
     #my-button img {
       width: 120px; 
       height: auto;
+    }
+    #my-button:hover {
+      opacity: 0.8;
     }
     #image-to-hide {
       width: 200px;

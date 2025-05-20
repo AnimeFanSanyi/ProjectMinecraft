@@ -36,26 +36,26 @@
     </div>
 
     <script>
-       document.getElementById("my-button").addEventListener("click", function () {
-       if (window.scrollY > 0) {
+        document.getElementById("my-button").addEventListener("click", function () {
+             console.log("Gomb megnyomva!");
+  
+        window.scrollTo({ top: 0, behavior: 'smooth' });
 
-       window.scrollTo(0, 0);
-
-
-       setTimeout(() => {
 
         document.getElementById("creeper-figure").style.display = "none";
         document.getElementById("image-to-hide").style.display = "none";
+        document.getElementById("video-container").style.display = "block";
 
-        document.getElementById("video-container").innerHTML = `
-          <iframe width="560" height="315"
+         document.getElementById("video-container").innerHTML = `
+            <iframe width="560" height="315"
             src="https://www.youtube.com/embed/jn4xFdPpMUg?start=2&autoplay=1&mute=1"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
-          </iframe>
+            </iframe>`;
+        });
     </script>
 
     <hr>
