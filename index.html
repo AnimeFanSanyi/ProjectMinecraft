@@ -36,6 +36,14 @@
     </div>
 
     <script>
+        window.addEventListener('load', () => {
+     if (window.location.hash) {
+     window.scrollTo(0, 0);
+        }
+        });
+    </script>
+
+    <script>
         document.getElementById("my-button").addEventListener("click", function () {
              console.log("Gomb megnyomva!");
   
@@ -55,6 +63,14 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
             </iframe>`;
+        });
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY;
+        const header = document.querySelector('header');
+        header.style.backgroundPosition = `center ${-scrollY}px`;
         });
     </script>
 
