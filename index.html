@@ -11,25 +11,27 @@
 
 
   <header>
-    <img src="project_minecraft2.png" class="logo" alt="Logo">
-    <h1><strong style="color: white">Minecraft Végigjátszás Kezdőknek</strong></h1>
-    <button id="my-button">
-        <img src="flint_and_steel!.jpg" alt="Play">
-    </button>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="project_minecraft2.png" class="logo" alt="Logo" style="padding-top: 15px;"></a>
+    <h1><strong style="color: white; line-height: 1.5;" >Minecraft Végigjátszás Kezdőknek</strong></h1>
+    
     <nav>
-
+        <button id="my-button">
+            <img src="flint_and_steel!.jpg" alt="Play">
+        </button>
     </nav>
   </header>
 
 
   <main>
-    <hr>
+    
     <figure id="creeper-figure">
         <img id="image-to-hide" src="creeper_oh_maaaan.jpg" alt="Creeper">
-        <figcaption>Creeper? <br>
-                    Aww, man
+        <a href="https://www.youtube.com/watch?v=cPJUBQd-PNM" target="_blank"><figcaption>Creeper? <br>
+                    Aww, man</a>
         </figcaption>
     </figure>
+
+    
 
     <div id="video-section">
         <div id="video-container"></div>
@@ -78,9 +80,9 @@
     <section class="bal_margo">
         <h2><strong><u style="size: 15px;">Tartalomjegyzék:</u></strong></h2>
         <ul>
-            <li><a href="#iranyitas">Irányítás</a></li>
-            <li><a href="#barkacsolas">Barkácsolás</a></li>
-            <li><a href=""></a></li>
+            <li style="padding-bottom: 15px;"><a href="#iranyitas">Irányítás</a></li>
+            <li style="padding-bottom: 15px;"><a href="#inventory">Inventory</a></li>
+            <li style="padding-bottom: 15px;"><a href="#crafting">Barkácsolás</a></li>
         </ul>
     </section>
 
@@ -88,7 +90,7 @@
 
    
     <section class="bal_margo">
-        <h2 style="color: white; padding-top: 25px;" id="iranyitas">Irányítás:</h2>
+        <h2 style="color: white; padding-top: 25px; display: flex; justify-self: center;" id="iranyitas">Irányítás:</h2>
 
         <div style="float: right; width: auto; height: 200px; padding-right: 15px;">
             <img src="minecraft_hints.png" alt="hints">
@@ -130,15 +132,187 @@
             <td>képernyőkép készitése</td></tr>
         <tr><td><span class="key">F3+F4</span></td>
             <td>gamemode gyors váltása (csak ha csalások engedélyezve)</td></tr>
-        <tr><td><span class="key">F5</span></td>
+        <tr><td><span class="key"  id="inventory">F5</span></td>
             <td>perspektíva váltása (külső, belső, elülső)</td></tr>
         <tr><td><span class="key">L</span></td>
             <td>achievement menü megjelenítése</td></tr>
         <tr><td><span class="key">Ctrl+W</span></td>
-            <td>futás (csak ameddig a hungerbar nincs 4 alatt)</td></tr>
+            <td>futás (csak ameddig a hungerbar nincs 4🍗 alatt)</td></tr>
         </table>
 
-    <h2 style="color: white; padding-top: 25px;" id="barkacsolas">Barkácsolás:</h2>
+        <hr>
+
+    <h2 style="color: white; padding-top: 25px; padding-bottom: 25px; display: flex; justify-self: center;">Inventory:</h2>
+
+    <section>
+        <div style="float: right; width: auto; height: 200px; padding-right: 15px; display: flex; vertical-align: middle;">
+            <img src="inventory_crafting_gui.png" alt="inventory_crafting">
+        </div>
+        <ul class="nice_text">
+            <li>Amikor megnyitod az inventory-d, akkor látod bal oldalon a karaktered miniben, <br>
+                mellette pedig 4 slot-ot, ahova páncéldarabokat lehet berakni és viselni.</li>
+            <li>A jobb felső sarokban az alap barkácsoló része az inventory-nak, ott tudsz <br>
+                barkácsolni, mielőtt még lenne barkácsasztalod, egy 2x2-es dobozban kis <br>
+                 receptek alapján.</li>
+            <li>A karaktered bal oldalán lévő slot a karaktered bal keze, ide lehet bármilyen <br>
+                tárgyat rakni (java edition) és a karaktered a bal kezében tartja, ezt leginkább <br>
+                pajzsokat, totem of undying-okat, kaját és <a href="https://optifine.net/home" target="_blank">OptiFine</a> <br>
+                használataesetén világító tárgyakat szoktak itt tartani.</li>
+            <li>A barkácsoló rész alatt láthatsz egy zöld könyvet, az megjeleníti az összes készíthető <br>
+                tárgyat, hozzávalóit, receptjét és hogy melyik tárgyak hiányoznak az elkészítéséhez <br>
+                (kivéve ha be van állítva a korlátozott barkácsolás).</li>
+            <li>Azán ott van a 3x9 nagyságú hely, ahol tárolhatsz bármilyen itemeket, amik <br>
+                általában 64 vagy 16 vagy 1 <strong><em><u>ugyanolyan</u></em></strong> tárgy fér egy slot-ba.</li>
+            <li>És még ott van az 1x9-es sor legalul, az a hotbar, amit az inventory <br>
+                 megnyitása nélkül is látsz.</li>
+            <li  id="crafting">Végsőnek vannak az inventory-ban használható egér és/vagy billentyű <br>
+                shorcut-ok, amik segítenek az inventory könnyebb rendezéséhez vagy a gyorsabb <br>
+                multi-tárgykészítéshez, amiknek <a href="https://codakid.com/minecraft-shortcuts/" target="_blank">itt</a> <br>
+                van a linkje, és ha esetleg más kihagyott dolgok.</li>
+        </ul>
+
+        <hr>
+
+        <h2 style="color: white; padding-top: 25px; padding-bottom: 25px; display: flex; justify-self: center;">Barkácsolás:</h2>
+
+        <section>
+
+            <div style="float: right; width: auto; height: 200px; padding-right: 15px; display: flex; vertical-align: middle;">
+                <img src="crafting_table_gui.png" alt="crafting_table_gui">
+            </div>
+
+            <p style="padding-bottom: 10px; font-size: 17px; line-height: 150%; padding-bottom: 20px;" class="little_text">Miután találtál bármilyen fát a közeledben és hosszan nyomva a <br>
+                bal egérgombot, kiütötted, akkor kapsz farönköt, amit ha <br>
+                beteszel az inventory-dban lévő 2x2-es barkácsoló részbe, <br>
+                akkor mutatja hogy abból készíthetsz fadeszkákat, botokat, <br>
+                barkácsasztalt, a kis könyv segítségével.</p>
+
+            <p style="padding-bottom: 10px; font-size: 17px; line-height: 150%; padding-bottom: 20px;" class="little_text">Miután megvan a barkácsasztal és letetted, akkor ott is <br>
+                találsz egy barkácsoló részt, de ez már 3x3-as, amivel már <br>
+                minden barkácsolható tárgyat elkészíthetsz már, és az ott is <br>
+                megtalálható kis könyv alapján készíthetsz már rengeteg dolgot, <br>
+                ezek között eszközöket.</p>
+
+            <div>
+                <p>Ezek az eszközök (a sebzés nagysága,a blokkok kiütésének gyorsasága és a durability-je az eszköz anyagától függ):</p>
+                <ul  class="nice_text">
+                    <li><strong><u>Kard</u></strong> - ezzel lehet a leghatékonyabban sebezni a mobokat, mert ezeknek a legtöbb a <br>
+                        sebzés/másodperc-ük, azaz ennek nem a legnagyobb a sebzése, de a cooldown-jával <br>
+                        ezzel lehet a legtöbb sebzést elérni egy adott idő alatt.</li>
+                    <li><strong><u>Balta</u></strong> - ezzel gyorsabban lehet a fából készült blokkokat kiütni.</li>
+                    <li><strong><u>Ásó</u></strong> - ezzel lehet gyorsabban kiásni a lazább szerkezetű blockokat, mint <br>
+                        a föld, homok, sóder, agyag stb.</li>
+                    <li><strong><u>Csákány</u></strong> - ezzel tudod kiütni a kő/érc alapú blokkokat hogy a blokk által dobott tárgyat megkapd, <br>
+                        a csákány anyagától függ hogy mit tud kiütni.</li>
+                    <li><strong><u>Kapa</u></strong> - ezzel tudod megkapálni a földet hogy ültetni tudj, és pár blockot <br>
+                        ezzel <em>gyorsabban</em> tudsz kiütni.</li>
+                </ul>
+                <p>Az eszközöknek van durability-je, ami azt jelenti hogy hány blockot tud kiütni mielőtt eltörik <br>
+                    és eltűnik az inventory-ból, ezen kívül van az attack cooldown, sebzés is, és ezeket az <br>
+                    F3+H-val tudod megjeleníteni és a kurzort az eszköz fölött jelennek meg.</p>
+            </div>
+
+            
+
+            <hr>
+
+            <div>
+
+                <h3 style="color: white; padding-top: 25px; padding-bottom: 25px;">Egyéb hasznos blokkok:</h3>
+
+                <div style="float: right; width: auto; height: 200px; padding-right: 15px; display: flex; vertical-align: middle;">
+                    <a href="https://minecraft.wiki/w/Smelting" target="_blank"><img src="furnace_gui.jpg" alt="furnace_gui"></a>
+                </div>
+
+                <ul  class="nice_text">
+                    <li><strong><u>Ágy</u></strong> - ebben át tudod aludni az éjszakát és amíg nincs mellette és rajta <br>
+                        2 blokk egymás felett, addig ott életsz újra (spawnpoint), <br>
+                        és csak addig ,amíg le van rakva és rákantittottál, ha kiütöd, <br>
+                        akkor eltűnik a spawnpoint-od.</li>
+                    <li><strong><u>Láda</u></strong> - ahogy gondolhattad, egy láda... és azt tesz amit egy láda, <br>
+                        de ha 2 ládát raksz egymás mellé, akkor kombinálódik <br>
+                        a ládák inventory-ja.</li>
+                    <li><strong><u>Üllő</u></strong> - az üllővel tudsz javítani páncélokat és mindenféle eszközt. <br>
+                        Tudsz 2, nem muszály ugyanolyan, de ugyanazokat a tárgyakat kombinálni, <br>
+                        hogy a durability-jük összeadódjon, és <a href="https://minecraft.fandom.com/wiki/Enchanted_Book" target="_blank">enchant</a>okat is lehet <br>
+                        rájuk tenni, meg kombinálni, de ez itt túl komplikált, ezért <a href="https://minecraft.fandom.com/wiki/Anvil_mechanics" target="_blank">itt</a> <br>
+                        nézheted meg jobban.</li>
+                    <li>Kemencék: <br>
+                        <ol>
+                            <li><strong><u>Kemence (alap)</u></strong>: Ez a kemence 8 zűzottkőből készíthető el a barkácsasztalban, körben téve, <br>
+                                a zúzottkövet pedig kő csákánnyal való kiütésekor kapod. Mindent ki tud sütni ami <br>
+                                kisüthető/megsüthető.</li>
+                            <li><strong><u><a href="https://minecraft.fandom.com/wiki/Smoker" target="_blank">Füstölő</a></u></strong>: Ez a kemence fajta csak a megsüthető ételeket tudja megsütni... mert egy füstölő, <br>
+                                ahol nem érceket meg követ szoktunk füstölni..., de sokkal gyorsabban süti meg őket mint egy <br>
+                                normális kemence.</li>
+                            <li><strong><u><a href="https://minecraft.fandom.com/wiki/Blast_Furnace" target="_blank">Olvasztókemence</a></u></strong>: Az olvasztókemence csakis érceket tud kisütni rudakra, <br>
+                                fém páncélokat rögökre (kivéve a lánc) és a netherite-ot netherite scrap-vé, de ez is sokkal <br>
+                                gyorsabban csinálja ezt ,mint egy átlagos kemence.</li>
+                        </ol> <br>
+                        Az alap kemencében égethető tárgyakról és a tüzelőanyagokról <a href="https://minecraft.wiki/w/Smelting" target="_blank">itt</a> található minden egyéb információ.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 style="color: white; padding-top: 25px;" id="structures">Struktúrák:</h2>
+
+        <section>
+
+
+        </section>
+
+
+
+
+        
+    </section>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </section>
 

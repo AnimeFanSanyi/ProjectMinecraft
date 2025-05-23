@@ -46,8 +46,11 @@ header h1 {
 
 hr{
   border: none;
-  height: 3px;
-  background-color: black;
+  height: 32px;
+  background-image: url('hardcore_heart.png');
+  background-repeat: repeat-x;
+  background-size: 25px 25px;  /*egy szív nagysága*/
+  background-position: center;
 }
 
 html {
@@ -68,6 +71,7 @@ main{
 
 a{
   color: #5E9D34;
+  text-decoration: none;
 }
 
 figure figcaption{
@@ -97,7 +101,7 @@ figure figcaption{
 }
 
 .key {
-  background-color: #5e9d34e0;
+  background-color: rgba(94, 157, 52, 0.878);;
   color: black;
   padding: 2px 6px;
   border-radius: 4px;
@@ -115,9 +119,17 @@ figure figcaption{
   scroll-margin-top: 160px;
 }
 
+.nice_text li{
+  padding-bottom: 20px;
+  line-height: 23px;
+  font-size: 15px;
+  letter-spacing: normal;
+  white-space: nowrap;
+}
 
-
-
+.little_text{
+  white-space: nowrap;
+}
 
 
 
