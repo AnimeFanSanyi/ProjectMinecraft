@@ -131,13 +131,42 @@ figure figcaption{
   white-space: nowrap;
 }
 
+.tablazat1{
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+.tablazat1 table{
+  margin: 20px;
+  border: #5E9D34 solid 2px;
+  border-collapse: collapse;
+}
+.tablazat1 thead{
+border: #5E9D34 solid 2px;
+color: #5E9D34;
+border-collapse: collapse;
+}
+.tablazat1 thead th{
+  text-align: center;
+}
+.tablazat1 tbody{
+border: #5E9D34 solid 2px;
+border-collapse: collapse;
+}
+.tablazat1 tbody th{
+border: #5E9D34 solid 2px;
+text-align: center;
 
+}
+.tablazat1 tbody td{
+color: white;
+border: #5E9D34 solid 2px;
+text-align: center;
+}
 
-
-
-
-
-
+.material_tools{
+  padding: 3px;
+}
 
 
 

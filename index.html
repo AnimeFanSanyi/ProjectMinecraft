@@ -79,11 +79,12 @@
     <hr>
     <section class="bal_margo">
         <h2><strong><u style="size: 15px;">Tartalomjegyzék:</u></strong></h2>
-        <ul>
+        <ol>
             <li style="padding-bottom: 15px;"><a href="#iranyitas">Irányítás</a></li>
             <li style="padding-bottom: 15px;"><a href="#inventory">Inventory</a></li>
             <li style="padding-bottom: 15px;"><a href="#crafting">Barkácsolás</a></li>
-        </ul>
+            <li style="padding-bottom: 15px;"><a href="#anyagok"></a>Páncél/eszköz anyagok</li>
+        </ol>
     </section>
 
     <hr>
@@ -153,7 +154,7 @@
                 mellette pedig 4 slot-ot, ahova páncéldarabokat lehet berakni és viselni.</li>
             <li>A jobb felső sarokban az alap barkácsoló része az inventory-nak, ott tudsz <br>
                 barkácsolni, mielőtt még lenne barkácsasztalod, egy 2x2-es dobozban kis <br>
-                 receptek alapján.</li>
+                    receptek alapján.</li>
             <li>A karaktered bal oldalán lévő slot a karaktered bal keze, ide lehet bármilyen <br>
                 tárgyat rakni (java edition) és a karaktered a bal kezében tartja, ezt leginkább <br>
                 pajzsokat, totem of undying-okat, kaját és <a href="https://optifine.net/home" target="_blank">OptiFine</a> <br>
@@ -164,100 +165,269 @@
             <li>Azán ott van a 3x9 nagyságú hely, ahol tárolhatsz bármilyen itemeket, amik <br>
                 általában 64 vagy 16 vagy 1 <strong><em><u>ugyanolyan</u></em></strong> tárgy fér egy slot-ba.</li>
             <li>És még ott van az 1x9-es sor legalul, az a hotbar, amit az inventory <br>
-                 megnyitása nélkül is látsz.</li>
+                    megnyitása nélkül is látsz.</li>
             <li  id="crafting">Végsőnek vannak az inventory-ban használható egér és/vagy billentyű <br>
                 shorcut-ok, amik segítenek az inventory könnyebb rendezéséhez vagy a gyorsabb <br>
                 multi-tárgykészítéshez, amiknek <a href="https://codakid.com/minecraft-shortcuts/" target="_blank">itt</a> <br>
                 van a linkje, és ha esetleg más kihagyott dolgok.</li>
         </ul>
+    </section>
+
+    <hr>
+
+    <h2 style="color: white; padding-top: 25px; padding-bottom: 25px; display: flex; justify-self: center;">Barkácsolás:</h2>
+
+    <section>
+
+        <div style="float: right; width: auto; height: 200px; padding-right: 15px; display: flex; vertical-align: middle;">
+            <img src="crafting_table_gui.png" alt="crafting_table_gui">
+        </div>
+
+        <p style="padding-bottom: 10px; font-size: 17px; line-height: 150%; padding-bottom: 20px;" class="little_text">Miután találtál bármilyen fát a közeledben és hosszan nyomva a <br>
+            bal egérgombot, kiütötted, akkor kapsz farönköt, amit ha <br>
+            beteszel az inventory-dban lévő 2x2-es barkácsoló részbe, <br>
+            akkor mutatja hogy abból készíthetsz fadeszkákat, botokat, <br>
+            barkácsasztalt, a kis könyv segítségével.</p>
+
+        <p style="padding-bottom: 10px; font-size: 17px; line-height: 150%; padding-bottom: 20px;" class="little_text">Miután megvan a barkácsasztal és letetted, akkor ott is <br>
+            találsz egy barkácsoló részt, de ez már 3x3-as, amivel már <br>
+            minden barkácsolható tárgyat elkészíthetsz már, és az ott is <br>
+            megtalálható kis könyv alapján készíthetsz már rengeteg dolgot, <br>
+            ezek között eszközöket.</p>
+
+        <div>
+            <p>Ezek az eszközök (a sebzés nagysága,a blokkok kiütésének gyorsasága és a durability-je az eszköz anyagától függ):</p>
+            <ul  class="nice_text">
+                <li><strong><u>Kard</u></strong> - ezzel lehet a leghatékonyabban sebezni a mobokat, mert ezeknek a legtöbb a <br>
+                    sebzés/másodperc-ük, azaz ennek nem a legnagyobb a sebzése, de a cooldown-jával <br>
+                    ezzel lehet a legtöbb sebzést elérni egy adott idő alatt.</li>
+                <li><strong><u>Balta</u></strong> - ezzel gyorsabban lehet a fából készült blokkokat kiütni.</li>
+                <li><strong><u>Ásó</u></strong> - ezzel lehet gyorsabban kiásni a lazább szerkezetű blockokat, mint <br>
+                    a föld, homok, sóder, agyag stb.</li>
+                <li><strong><u>Csákány</u></strong> - ezzel tudod kiütni a kő/érc alapú blokkokat hogy a blokk által dobott tárgyat megkapd, <br>
+                    a csákány anyagától függ hogy mit tud kiütni.</li>
+                <li><strong><u>Kapa</u></strong> - ezzel tudod megkapálni a földet hogy ültetni tudj, és pár blockot <br>
+                    ezzel <em>gyorsabban</em> tudsz kiütni.</li>
+            </ul>
+            <p>Az eszközöknek van durability-je, ami azt jelenti hogy hány blockot tud kiütni mielőtt eltörik <br>
+                és eltűnik az inventory-ból, ezen kívül van az attack cooldown, sebzés is, és ezeket az <br>
+                F3+H-val tudod megjeleníteni és a kurzort az eszköz fölött jelennek meg.</p>
+        </div>
 
         <hr>
 
-        <h2 style="color: white; padding-top: 25px; padding-bottom: 25px; display: flex; justify-self: center;">Barkácsolás:</h2>
+        <div>
 
-        <section>
+            <h3 style="color: white; padding-top: 25px; padding-bottom: 25px;">Egyéb hasznos blokkok:</h3>
 
             <div style="float: right; width: auto; height: 200px; padding-right: 15px; display: flex; vertical-align: middle;">
-                <img src="crafting_table_gui.png" alt="crafting_table_gui">
+                <a href="https://minecraft.wiki/w/Smelting" target="_blank"><img src="furnace_gui.jpg" alt="furnace_gui"></a>
             </div>
 
-            <p style="padding-bottom: 10px; font-size: 17px; line-height: 150%; padding-bottom: 20px;" class="little_text">Miután találtál bármilyen fát a közeledben és hosszan nyomva a <br>
-                bal egérgombot, kiütötted, akkor kapsz farönköt, amit ha <br>
-                beteszel az inventory-dban lévő 2x2-es barkácsoló részbe, <br>
-                akkor mutatja hogy abból készíthetsz fadeszkákat, botokat, <br>
-                barkácsasztalt, a kis könyv segítségével.</p>
+            <ul  class="nice_text">
+                <li><strong><u>Ágy</u></strong> - ebben át tudod aludni az éjszakát és amíg nincs mellette és rajta <br>
+                    2 blokk egymás felett, addig ott életsz újra (spawnpoint), <br>
+                    és csak addig ,amíg le van rakva és rákantittottál, ha kiütöd, <br>
+                    akkor eltűnik a spawnpoint-od.</li>
+                <li><strong><u>Láda</u></strong> - ahogy gondolhattad, egy láda... és azt tesz amit egy láda, <br>
+                    de ha 2 ládát raksz egymás mellé, akkor kombinálódik <br>
+                    a ládák inventory-ja.</li>
+                <li><strong><u>Üllő</u></strong> - az üllővel tudsz javítani páncélokat és mindenféle eszközt. <br>
+                    Tudsz 2, nem muszály ugyanolyan, de ugyanazokat a tárgyakat kombinálni, <br>
+                    hogy a durability-jük összeadódjon, és <a href="https://minecraft.fandom.com/wiki/Enchanted_Book" target="_blank">enchant</a>okat is lehet <br>
+                    rájuk tenni, meg kombinálni, de ez itt túl komplikált, ezért <a href="https://minecraft.fandom.com/wiki/Anvil_mechanics" target="_blank">itt</a> <br>
+                    nézheted meg jobban.</li>
+                <li>Kemencék: <br>
+                    <ol>
+                        <li><strong><u>Kemence (alap)</u></strong>: Ez a kemence 8 zűzottkőből készíthető el a barkácsasztalban, körben téve, <br>
+                            a zúzottkövet pedig kő csákánnyal való kiütésekor kapod. Mindent ki tud sütni ami <br>
+                            kisüthető/megsüthető.</li>
+                        <li><strong><u><a href="https://minecraft.fandom.com/wiki/Smoker" target="_blank">Füstölő</a></u></strong>: Ez a kemence fajta csak a megsüthető ételeket tudja megsütni... mert egy füstölő, <br>
+                            ahol nem érceket meg követ szoktunk füstölni..., de sokkal gyorsabban süti meg őket mint egy <br>
+                            normális kemence.</li>
+                        <li id="anyagok"><strong><u><a href="https://minecraft.fandom.com/wiki/Blast_Furnace" target="_blank">Olvasztókemence</a></u></strong>: Az olvasztókemence csakis érceket tud kisütni rudakra, <br>
+                            fém páncélokat rögökre (kivéve a lánc) és a netherite-ot netherite scrap-vé, de ez is sokkal <br>
+                            gyorsabban csinálja ezt ,mint egy átlagos kemence.</li>
+                    </ol> <br>
+                    Az alap kemencében égethető tárgyakról és a tüzelőanyagokról <a href="https://minecraft.wiki/w/Smelting" target="_blank">itt</a> található <br>
+                    minden egyéb információ.
+                </li>
+            </ul>
+        </div>
+    </section>
 
-            <p style="padding-bottom: 10px; font-size: 17px; line-height: 150%; padding-bottom: 20px;" class="little_text">Miután megvan a barkácsasztal és letetted, akkor ott is <br>
-                találsz egy barkácsoló részt, de ez már 3x3-as, amivel már <br>
-                minden barkácsolható tárgyat elkészíthetsz már, és az ott is <br>
-                megtalálható kis könyv alapján készíthetsz már rengeteg dolgot, <br>
-                ezek között eszközöket.</p>
+    <hr>
 
-            <div>
-                <p>Ezek az eszközök (a sebzés nagysága,a blokkok kiütésének gyorsasága és a durability-je az eszköz anyagától függ):</p>
-                <ul  class="nice_text">
-                    <li><strong><u>Kard</u></strong> - ezzel lehet a leghatékonyabban sebezni a mobokat, mert ezeknek a legtöbb a <br>
-                        sebzés/másodperc-ük, azaz ennek nem a legnagyobb a sebzése, de a cooldown-jával <br>
-                        ezzel lehet a legtöbb sebzést elérni egy adott idő alatt.</li>
-                    <li><strong><u>Balta</u></strong> - ezzel gyorsabban lehet a fából készült blokkokat kiütni.</li>
-                    <li><strong><u>Ásó</u></strong> - ezzel lehet gyorsabban kiásni a lazább szerkezetű blockokat, mint <br>
-                        a föld, homok, sóder, agyag stb.</li>
-                    <li><strong><u>Csákány</u></strong> - ezzel tudod kiütni a kő/érc alapú blokkokat hogy a blokk által dobott tárgyat megkapd, <br>
-                        a csákány anyagától függ hogy mit tud kiütni.</li>
-                    <li><strong><u>Kapa</u></strong> - ezzel tudod megkapálni a földet hogy ültetni tudj, és pár blockot <br>
-                        ezzel <em>gyorsabban</em> tudsz kiütni.</li>
-                </ul>
-                <p>Az eszközöknek van durability-je, ami azt jelenti hogy hány blockot tud kiütni mielőtt eltörik <br>
-                    és eltűnik az inventory-ból, ezen kívül van az attack cooldown, sebzés is, és ezeket az <br>
-                    F3+H-val tudod megjeleníteni és a kurzort az eszköz fölött jelennek meg.</p>
-            </div>
+    <h2 style="color: white; padding-top: 25px; padding-bottom: 25px; display: flex; justify-self: center;">Páncél/eszköz "szintek":</h2>
 
-            
+    <section>
+        <p style="white-space: nowrap; line-height: 1.5;">Jelenleg a játékban 6 szint van az eszközöknél és 5 a páncéloknál, az eszközöknél fa és kő <br>
+            variáns van ami a páncéloknál nincs, a páncéloknál pedig a lánc variáns nincs az eszközöknél. <br>
+            A szintjük meghatározza az eszközök, páncélok bányászati szintjét, durability-jét, <br>
+            bányászati sebességének szorzóját, sebzés bónuszát, enchantolhatóságát és a javító tárgyát.
+        </p>
+        <h3 style="color: white; padding-top: 25px; padding-bottom: 25px; padding-left: 25px;"> <a href="https://minecraft.fandom.com/wiki/Tiers">Eszközök:</a></h3>
 
-            <hr>
+        <div class="tablazat1">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="border: #5E9D34 solid 2px; padding: 3px;">Szint<br> neve</th>
+                        <th style="border: #5E9D34 solid 2px; padding: 3px;">Bányász.<br> szint</th>
+                        <th style="border: #5E9D34 solid 2px; padding: 3px;" >Durability</th>
+                        <th style="border: #5E9D34 solid 2px; padding: 3px;">Bányász.<br> sebesség<br> száma</th>
+                        <th style="border: #5E9D34 solid 2px; padding: 3px;">Sebzés<br> bónusz</th>
+                        <th style="border: #5E9D34 solid 2px; padding: 3px;">Enchantol-<br> hatóság</th>
+                        <th style="border: #5E9D34 solid 2px; padding: 3px;">Javító<br> tárgy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="color: #63492b;" class="material_tools">Fa</th>
+                        <td>0</td>
+                        <td>59</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>15</td>
+                        <td style="text-align: left;"><a href="https://minecraft.fandom.com/wiki/Planks" target="_blank" title="Planks">
+                            <span style="white-space: nowrap;">
+                                <span style="display: inline-block; vertical-align: text-top; height: 16px; width: 16px; background-repeat: no-repeat; background-image:url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/df/BlockCSS.png/revision/latest?cb=20240117193413&cb=20230918142842&cb=20230918142842&cb=20230918142842&cb=20230918142842&cb=20230918142842&version=1695047332160);background-position:-80px -480px"></span>
+                                <span style="padding-left: 2px;">Deszkák</span>
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="color: #8c8d8d;" class="material_tools">Kő</th>
+                        <td>1</td>
+                        <td>131</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td  style="line-height: 1.2; text-align: left;"><p>
+                                <a href="https://minecraft.fandom.com/wiki/Cobbled_Deepslate" target="_blank" title="Cobbled Deepslate">
+                                <span style="white-space: nowrap;">
+                                    <span style="display: inline-block; vertical-align: text-top; height: 16px; width: 16px; background-repeat: no-repeat; background-image:url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/df/BlockCSS.png/revision/latest?cb=20240117193413&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;version=1695047332160);background-position:-608px -48px"></span>
+                                    <span style="padding-left: 2px;">Mélypala Törmelék</span>
+                                </span>
+                            </a> <br>
 
-            <div>
+                                <a href="https://minecraft.fandom.com/wiki/Cobblestone" target="_blank" title="Cobblestone">
+                                <span style="white-space: nowrap;">
+                                    <span style="display: inline-block; vertical-align: text-top; height: 16px; width: 16px; background-repeat: no-repeat; background-image:url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/df/BlockCSS.png/revision/latest?cb=20240117193413&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;version=1695047332160);background-position:-32px -416px"></span>
+                                    <span style="padding-left: 2px;">Zúzottkő</span>
+                                </span>
+                            </a> <br>
 
-                <h3 style="color: white; padding-top: 25px; padding-bottom: 25px;">Egyéb hasznos blokkok:</h3>
+                                <a href="https://minecraft.fandom.com/wiki/Blackstone" target="_blank" title="Blackstone">
+                                    <span style="white-space: nowrap;">
+                                        <span style="display: inline-block; vertical-align: text-top; height: 16px; width: 16px; background-repeat: no-repeat; background-image:url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/df/BlockCSS.png/revision/latest?cb=20240117193413&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;cb=20230918142842&amp;version=1695047332160);background-position:-592px -720px"></span>
+                                        <span style="padding-left: 2px;">Feketekő</span>
+                                    </span>
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="color: #dad9d9;" class="material_tools">Vas</th>
+                        <td>2</td>
+                        <td>250</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>14</td>
+                        <td style="text-align:left"><a href="https://minecraft.fandom.com/wiki/Iron_Ingot" target="_blank" title="Iron Ingot">
+                            <span style="white-space: nowrap;">
+                                <span style="display: inline-block; vertical-align: text-top; height: 16px; width: 16px; background-repeat: no-repeat; background-image:url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/ItemCSS.png/revision/latest?cb=20241222000201&amp;version=1734825722562);background-position:-112px -560px"></span>
+                                <span style="padding-left: 2px;">Vasrúd</span>
+                            </span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="color: #54D6AC;" class="material_tools">Gyémánt</th>
+                        <td>3</td>
+                        <td>1561</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>10</td>
+                        <td style="text-align:left"><a href="https://minecraft.fandom.com/wiki/Diamond" title="Diamond">
+                            <span style="white-space: nowrap;">
+                                <span style="display: inline-block; vertical-align: text-top; height: 16px; width: 16px; background-repeat: no-repeat; background-image:url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/ItemCSS.png/revision/latest?cb=20241222000201&amp;version=1734825722562);background-position:-192px -544px"></span>
+                                <span style="padding-left: 2px;">Gyémánt</span>
+                            </span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="color: #464346;" class="material_tools">Netherite</th>
+                        <td>4</td>
+                        <td>2031</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>14</td>
+                        <td style="text-align:left"><a href="https://minecraft.fandom.com/wiki/Netherite_Ingot" title="Netherite Ingot">
+                            <span style="white-space: nowrap;">
+                                <span style="display: inline-block; vertical-align: text-top; height: 16px; width: 16px; background-repeat: no-repeat; background-image:url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/ItemCSS.png/revision/latest?cb=20241222000201&amp;version=1734825722562);background-position:-240px -800px"></span>
+                                <span style="padding-left: 2px;">Netherite rúd</span>
+                            </span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="color:  #cc9900;" class="material_tools">Arany</th>
+                        <td>0</td>
+                        <td>32</td>
+                        <td>12</td>
+                        <td>0</td>
+                        <td>22</td>
+                        <td style="text-align:left"><a href="https://minecraft.fandom.com/wiki/Gold_Ingot" title="Gold Ingot">
+                            <span style="white-space: nowrap;">
+                                <span style="display: inline-block; vertical-align: text-top; height: 16px; width: 16px; background-repeat: no-repeat; background-image:url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/ItemCSS.png/revision/latest?cb=20241222000201&amp;version=1734825722562);background-position:-48px -560px"></span>
+                                <span style="padding-left: 2px;">Aranyrúd</span>
+                            </span></a>
+                        </td>
+                    </tr>
+                </tbody>
 
-                <div style="float: right; width: auto; height: 200px; padding-right: 15px; display: flex; vertical-align: middle;">
-                    <a href="https://minecraft.wiki/w/Smelting" target="_blank"><img src="furnace_gui.jpg" alt="furnace_gui"></a>
-                </div>
-
-                <ul  class="nice_text">
-                    <li><strong><u>Ágy</u></strong> - ebben át tudod aludni az éjszakát és amíg nincs mellette és rajta <br>
-                        2 blokk egymás felett, addig ott életsz újra (spawnpoint), <br>
-                        és csak addig ,amíg le van rakva és rákantittottál, ha kiütöd, <br>
-                        akkor eltűnik a spawnpoint-od.</li>
-                    <li><strong><u>Láda</u></strong> - ahogy gondolhattad, egy láda... és azt tesz amit egy láda, <br>
-                        de ha 2 ládát raksz egymás mellé, akkor kombinálódik <br>
-                        a ládák inventory-ja.</li>
-                    <li><strong><u>Üllő</u></strong> - az üllővel tudsz javítani páncélokat és mindenféle eszközt. <br>
-                        Tudsz 2, nem muszály ugyanolyan, de ugyanazokat a tárgyakat kombinálni, <br>
-                        hogy a durability-jük összeadódjon, és <a href="https://minecraft.fandom.com/wiki/Enchanted_Book" target="_blank">enchant</a>okat is lehet <br>
-                        rájuk tenni, meg kombinálni, de ez itt túl komplikált, ezért <a href="https://minecraft.fandom.com/wiki/Anvil_mechanics" target="_blank">itt</a> <br>
-                        nézheted meg jobban.</li>
-                    <li>Kemencék: <br>
-                        <ol>
-                            <li><strong><u>Kemence (alap)</u></strong>: Ez a kemence 8 zűzottkőből készíthető el a barkácsasztalban, körben téve, <br>
-                                a zúzottkövet pedig kő csákánnyal való kiütésekor kapod. Mindent ki tud sütni ami <br>
-                                kisüthető/megsüthető.</li>
-                            <li><strong><u><a href="https://minecraft.fandom.com/wiki/Smoker" target="_blank">Füstölő</a></u></strong>: Ez a kemence fajta csak a megsüthető ételeket tudja megsütni... mert egy füstölő, <br>
-                                ahol nem érceket meg követ szoktunk füstölni..., de sokkal gyorsabban süti meg őket mint egy <br>
-                                normális kemence.</li>
-                            <li><strong><u><a href="https://minecraft.fandom.com/wiki/Blast_Furnace" target="_blank">Olvasztókemence</a></u></strong>: Az olvasztókemence csakis érceket tud kisütni rudakra, <br>
-                                fém páncélokat rögökre (kivéve a lánc) és a netherite-ot netherite scrap-vé, de ez is sokkal <br>
-                                gyorsabban csinálja ezt ,mint egy átlagos kemence.</li>
-                        </ol> <br>
-                        Az alap kemencében égethető tárgyakról és a tüzelőanyagokról <a href="https://minecraft.wiki/w/Smelting" target="_blank">itt</a> található minden egyéb információ.
-                    </li>
-                </ul>
-            </div>
-        </section>
 
 
 
-        
+
+
+            </table>
+
+
+
+
+
+
+        </div>
+
+        <h3 style="color: white; padding-top: 25px; padding-bottom: 25px; padding-left: 25px;"> <a href="https://minecraft.fandom.com/wiki/Tiers">Páncélok:</a></h3>
+
+        <div class="tablazat1">
+            <table>
+                <tr> 
+                    <td><p class="little_text" style="line-height: 1.75;">
+                        A páncélok a legtöbb sebzést csökkentik a játékban, lehet barkácsasztalban <br>
+                        elkészíteni őket, megtalálni őket lehet bizonyos épületek ládáiban és mobokon, <br>
+                        akik a páncéllal spawnolnak le és legyőzésükkor néha eldobják, a moboknál <br>
+                        a páncél lehet enchantolt valamilyen enchant(ok)-kal és a durability-je <br>
+                        teljesen random (akár 0 vagy kicsivel alatta is néha) és a fegyverekre <br>
+                        is ugyanez vonatkozik.
+                        </p>
+                    </td>
+                    <td>
+                        <img src="Zombie_in_netherite_armor.png" alt="Zombie_in_netherite_armor" style="height: 250px; width: auto; padding: 5px;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+<hr>
+
+
+
+
+
+    </section>
 
 
 
@@ -273,16 +443,16 @@
 
     <h2 style="color: white; padding-top: 25px;" id="structures">Struktúrák:</h2>
 
-        <section>
+    <section>
 
 
-        </section>
+    </section>
 
 
 
 
         
-    </section>
+    
 
     <hr>
 
